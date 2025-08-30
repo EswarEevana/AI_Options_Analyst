@@ -1,57 +1,81 @@
-AI-Powered System for Techno-Fundamental Analysis of Indian Options
+# AI-Powered System for Techno-Fundamental Analysis of Indian Options
 
-This document outlines a sophisticated command-line application designed to function as an AI-powered techno-fundamental analyst for the Indian equity and options market. The system utilizes a Retrieval-Augmented Generation (RAG) architecture, integrated with a live data feed from Yahoo Finance, to generate detailed, data-driven options trading strategies for constituents of the Nifty 50 index.
-Core Features
+This document outlines a sophisticated command-line application designed to function as an AI-powered techno-fundamental analyst for the Indian equity and options market. The system utilizes a **Retrieval-Augmented Generation (RAG)** architecture, integrated with a live data feed from **Yahoo Finance**, to generate detailed, data-driven options trading strategies for constituents of the **Nifty 50** index.
 
-    Real-Time Market Data Integration: The system dynamically fetches real-time stock prices, comprehensive financial summaries, and options chain data for specified securities through the yfinance library.
+---
 
-    Advanced Retrieval-Augmented Generation (RAG) System: A ChromaDB vector database is employed to retrieve contextually relevant options strategies, which are then synthesized with live financial data to inform the generative model.
+## 🚀 Core Features
 
-    Comprehensive Techno-Fundamental Analysis: The generative AI is prompted to perform a holistic analysis, evaluating both technical indicators, such as price action, and fundamental metrics, including Return on Equity (ROE) and revenue growth, to formulate its recommendations.
+- **Real-Time Market Data Integration**  
+  Dynamically fetches real-time stock prices, comprehensive financial summaries, and options chain data for specified securities through the `yfinance` library.
 
-    Extensive Market Coverage: The application is capable of providing analysis for any of the 50 constituent stocks of the Nifty index, in addition to the Nifty 50 index itself (^NSEI).
+- **Advanced Retrieval-Augmented Generation (RAG) System**  
+  Employs a **ChromaDB vector database** to retrieve contextually relevant options strategies, which are then synthesized with live financial data to inform the generative model.
 
-    Enhanced Command-Line Interface: The user interacts with the system through a rich, professionally formatted, and user-friendly command-line interface, facilitated by the rich library.
+- **Comprehensive Techno-Fundamental Analysis**  
+  The generative AI performs a holistic analysis, evaluating both **technical indicators** (e.g., price action) and **fundamental metrics** (e.g., Return on Equity (ROE), revenue growth), to formulate its recommendations.
 
-Setup and Installation Procedures
+- **Extensive Market Coverage**  
+  Provides analysis for any of the **50 constituent stocks of the Nifty index**, in addition to the **Nifty 50 index itself (^NSEI)**.
+
+- **Enhanced Command-Line Interface**  
+  User interacts through a rich, professionally formatted, and user-friendly **command-line interface**, facilitated by the `rich` library.
+
+---
+
+## ⚙️ Setup and Installation
 
 The following instructions provide a comprehensive guide for the local deployment and configuration of the application.
-1. Repository Cloning
 
-First, clone the project repository to your local machine and navigate into the project directory.
-
+### 1. Repository Cloning
+```bash
 git clone <your-repository-url>
 cd ai-options-analyst
+```
 
-2. Virtual Environment Configuration
-
+### 2. Virtual Environment Configuration
 It is a standard best practice to utilize a virtual environment for dependency management to avoid conflicts with system-level packages.
 
+```bash
 python -m venv venv
-source venv/bin/activate  # On Windows systems, use the command: `venv\Scripts\activate`
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
-3. Dependency Installation
+### 3. Dependency Installation
+Install all requisite Python packages as specified in the `requirements.txt` file.
 
-Install all requisite Python packages as specified in the requirements.txt file.
-
+```bash
 pip install -r requirements.txt
+```
 
-4. API Key Configuration
+### 4. API Key Configuration
+The application requires a **Gemini API key** for its generative capabilities. For security purposes, this key should be configured as an environment variable.
 
-The application requires a Gemini API key for its generative capabilities. For security purposes, this key should be configured as an environment variable.
-
-For macOS/Linux Systems:
-
+#### macOS/Linux
+```bash
 export GEMINI_API_KEY='your_actual_api_key'
+```
 
-For Windows Command Prompt:
-
+#### Windows (Command Prompt)
+```cmd
 set GEMINI_API_KEY=your_actual_api_key
+```
 
-Application Execution
+---
 
+## ▶️ Application Execution
 Upon successful completion of the setup and installation procedures, the application can be executed using the following command:
 
+```bash
 python main.py
+```
 
-Legal Disclaimer: This application is provided strictly for educational and illustrative purposes. The information, strategies, and data generated by the system should not be construed as financial advice. Users are strongly advised to conduct their own independent research and consult with a qualified financial professional before making any investment decisions. The developers assume no liability for any financial outcomes resulting from the use of this tool.
+---
+
+## ⚖️ Legal Disclaimer
+This application is provided strictly for **educational and illustrative purposes**.  
+The information, strategies, and data generated by the system **should not** be construed as financial advice.  
+
+Users are strongly advised to conduct their own independent research and consult with a qualified financial professional before making any investment decisions.  
+
+The developers assume **no liability** for any financial outcomes resulting from the use of this tool.
