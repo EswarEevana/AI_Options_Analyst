@@ -1,0 +1,19 @@
+# Virtual Environmnet
+venv/
+/ai_analyst/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+
+pip-selfcheck.json
+
+# ChromaDB local storage
+chroma_db/
+
+# Environment variables
+.env
