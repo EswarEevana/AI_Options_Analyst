@@ -1,6 +1,6 @@
 # AI-Powered System for Techno-Fundamental Analysis of Indian Options
 
-This document outlines a sophisticated command-line application designed to function as an AI-powered techno-fundamental analyst for the Indian equity and options market. The system utilizes a **Retrieval-Augmented Generation (RAG)** architecture, integrated with a live data feed from **Yahoo Finance**, to generate detailed, data-driven options trading strategies for constituents of the **Nifty 50** index.
+This document outlines a sophisticated command-line application designed to function as an AI-powered techno-fundamental analyst for the Indian equity and options market. The system utilizes a **Retrieval-Augmented Generation (RAG)** architecture, integrated with a live data feed from **Yahoo Finance**, to generate detailed, data-driven options trading strategies for **Nifty 50** stocks  and the **Nifty 50** index.
 
 ---
 
